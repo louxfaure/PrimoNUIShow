@@ -66,5 +66,15 @@ javascript:(function() {
 
      showPnxLinkElem[i].parentNode.appendChild(recordIdSpan);
    }
+   /*show the availability status to help to configure GEtit 1 and 2 links mapping table*/
+    var availabilityButton = showPnxLinkElem[i].querySelectorAll('prm-search-result-availability-line button span.button-content>span.availability-status');
+   for (var a=0, b=availabilityButton.length; a < b; a++) {
+     var availabilityStatus = availabilityButton[a].getAttribute('class').split(' ').pop();
+     var statusSpan = document.createElement("span");
+     statusSpan.className = "show-recordid";
+     statusSpan.innerHTML = availabilityStatus;
+     statusSpan.style.padding = "2em 0 0 0";
+     availabilityButton[a].parentNode.appendChild(statusSpan);
+   }
   }
 })();

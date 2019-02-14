@@ -1,6 +1,8 @@
 # PrimoNUIShow
 Bookmarklet for showing **RecordID** as well as links for **Show PNX**,
 **Show Source Record** and **Show RIS**  in Primo's New User Interface (NUI).
+**Fork** Show the availability status code (not_restricted, available_in_my_institution , fulltext) for helping to configure 
+to configure GEtit 1 and 2 links mapping table.
 
 ## Functionality
 Use the bookmarklet on the brief results list or full view of the Primo NUI.
